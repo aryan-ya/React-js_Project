@@ -23,22 +23,25 @@ const Header = () => {
    </div>
 
    <div className="header_nav">
-     <div className="nav_item">
-     <span className='nav_itemLineOne'>Hello Guest</span>
-     <span className='nav_itemLineTwo'>Sign in </span>
-     </div>
-     <div className="nav_item">
-     <span className='nav_itemLineOne'>Your</span>
-     <span className='nav_itemLineTwo'>Shop </span>
-     </div>
-     <Link to="/checkout" style={{textDecoration: "none"}}>
-     <div className="nav_item">
-   <ShoppingBasketIcon fontSize='large' />
-     <span className='nav_itemLineTwo nav__basketCount'>{basket.length}</span>
-     </div>
-     </Link>
+        <Link to="/login" style={{ textDecoration:"none" }}>
+          <div className="nav_item">
+            <span className="nav__itemLineOne">Hello Guest</span>
+            <span className="nav__itemLineTwo">Sign In</span>
+          </div>
+        </Link>
+        <div className="nav_item">
+          <span className="nav__itemLineOne">Your</span>
+          <span className="nav__itemLineTwo">Shop</span>
+        </div>
+        <Link to="/checkout" style={{ textDecoration: "none" }}>
+          <div className="nav_itemBasket">
+            <ShoppingBasketIcon/>
+            <span className="nav_itemLineTwo nav__basketCount">{basket.length}</span>
+          </div>
+        </Link>
+      </div>
    
-   </div></div>
+   </div>
   )
 }
 
