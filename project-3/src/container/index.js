@@ -5,4 +5,4 @@ export { default as Header } from './header/Header.jsx';
 
 
 export {default as Possiblity} from  './possiblity/Possiblity.jsx';
-export {default as whatsGPT3} from  './whatGPT3/whatGPT3.jsx';
+export {default as WhatGPT3} from  './whatGPT3/WhatGPT3.jsx';
